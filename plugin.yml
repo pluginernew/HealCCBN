@@ -3,11 +3,19 @@ version: 0.1
 api: [3.0.0]
 main: HealCCBN\Main
 commands:
-  youtube:
+  yt:
     description: heal yourself
    
 permssions:
  yt:
     default: op
     description: allows player to use /youtube
-    childern: 
+    childern:
+   yt.heal:
+     default: op
+     description: /yt heal
+     children:
+    yt.feed:
+      default: op
+      description: /yt feed
+      children:
