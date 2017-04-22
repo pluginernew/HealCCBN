@@ -32,9 +32,23 @@ pubilc function onCommand(CommandSender $sender, Command $cmd, $label, array $ar
               }
               if($args[0] == "heal"){
                 if($sender->hasPermssion("yt.heal")){
-                  $sender->sendMessage(c::)
+                  $sender->sendMessage(c::BOLD.c::DARK_PURBLE."(!)".c::RESET.c::DARK_AQUA." you have been healed");
+                  $sender->setHealth(20.0);
+                 }elseif(!($sender->hasPermision("yt.heal"))){
+                        $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invalad perms");
+                 }
+               }
+               if($args[0] == "feed"){
+                 if($sender->hasPermission("yt.feed")){
+                   $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::DARK_AQUA." you have been feed");
+                   $sender->setFood("20.0");
+                 }elseif(!($sender->hasPermission("yt.feed"))){
+                         $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invalad perms");
+                 }
+               }
+   }
                 
-              
+}              
     
   
 
