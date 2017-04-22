@@ -46,8 +46,8 @@ pubilc function onCommand(CommandSender $sender, Command $cmd, $label, array $ar
                          $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invalad perms");
                  }
                }
-   }
-                
+             }
+   }               
 }              
     
   
