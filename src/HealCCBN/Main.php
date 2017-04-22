@@ -31,10 +31,10 @@ pubilc function onCommand(CommandSender $sender, Command $cmd, $label, array $ar
                      $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invald perms");
               }
               if($args[0] == "heal"){
-                if($sender->hasPermssion("yt.heal")){
+                if($sender->hasPermission("yt.heal")){
                   $sender->sendMessage(c::BOLD.c::DARK_PURBLE."(!)".c::RESET.c::DARK_AQUA." you have been healed");
                   $sender->setHealth(20.0);
-                 }elseif(!($sender->hasPermision("yt.heal"))){
+                 }elseif(!($sender->hasPermission("yt.heal"))){
                         $sender->sendMessage(c::BOLD.c::DARK_RED."(!)".c::RESET.c::RED." Invalad perms");
                  }
                }
